@@ -58,6 +58,15 @@
             vertical-align: middle; /* Alinea el icono verticalmente con las letras */
         }
 
+        .portfolio-fix {
+            width: 26px;       /* Lo hacemos más grande para compensar su diseño */
+            height: 26px;      /* Lo hacemos más grande para compensar su diseño */
+            filter: invert(1); /* Lo volvemos blanco */
+            position: relative; /* Nos permite usar 'top' */
+            top: 4px;          /* Lo bajamos manualmente para alinearlo con el texto */
+            margin-right: 8px; /* Reducimos un poco el margen para que no se vea tan lejos */
+        }
+
         .link-card:hover {
             background-color: var(--btn-hover);
             transform: translateY(-2px);
@@ -83,7 +92,7 @@
         </a>
 
         <a href="https://tu-portafolio.com" target="_blank" class="link-card">
-            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/frontendmentor.svg" alt="Portafolio" class="btn-icon" style="filter: invert(1);">
+            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/frontendmentor.svg" alt="Portafolio" class="btn-icon portfolio-fix">
             Portafolio Web
         </a>
 
